@@ -1,10 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "GimpoGothicRegular00";
+  }
+  
+  @font-face {
+    font-family: "GimpoGothicRegular00";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/GimpoGothicRegular00.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
 body {
     margin: 0;
     background-image: url("images/background.jfif");
     background-repeat: no-repeat;
     background-size: cover;
     font-family: "Rajdhani", sans-serif;
-
     align-items: center;
     justify-content: center;
     display: flex;
@@ -18,6 +30,7 @@ body {
     border-bottom: 10px solid blanchedalmond;
     height: 100%;
     min-height: 100vh;
+    
 }
 .input-area {
     position: relative;
@@ -73,6 +86,7 @@ body {
 .task-list-container {
     border: 1px solid lightgray;
     margin-top: 1em;
+    margin-left: 4em;
     position: relative;
 }
 .tab-type {
@@ -147,7 +161,7 @@ body {
     transition: 0.5s;
 }
 
-/*----------------------*/
+/*------날씨------*/
 
 .weather {
     padding: 20px;
@@ -161,11 +175,14 @@ body {
 .weather .weatherContent h2 {
     font-size: 24px;
     padding-bottom: 15px;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .weather .weatherContent span {
     line-height: 30px;
     color: #2C3639;
-    text-align: center;
+    text-align: left;
 }
 
 /* ------------------------------------ */
@@ -197,9 +214,11 @@ section {
     /*height: 100px;
     line-height: 100px;
     font-weight: bold; */
+    font-family: "Rajdhani", sans-serif;
+
 }
 
-/*기능 추가 컨테이너*/
+/*기능 추가 컨테이너 (앞쪽거)*/
 .container2 {
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -213,8 +232,10 @@ section {
 
 .leftSec {
     height: 100%;
-    width: 20%;
+    width: 25%;
     margin: 0 15px 15px 0;
+
+    font-family: "Rajdhani", sans-serif;
 }
 
 .rightSec {
@@ -228,8 +249,11 @@ section {
 }
 
 .whenContainer {
+    font-family: "Rajdhani", sans-serif;
     flex-direction: column;
-    border:1px solid;
+    border:1px solid blanchedalmond;
+    padding-top: 10px;
+    font-family: "GimpoGothicRegular00";
     /* padding: 40px;
     height: 180px;
     margin-bottom: 15px;
@@ -240,8 +264,10 @@ section {
 
 
 
-/*quote*/
+/*quote 명수옹 어록*/
 .quote {
+    border:1px solid blanchedalmond;
+font-family: "Rajdhani", sans-serif;
 padding: 20px;
 background-color: rgba(255, 255, 255, 0.6);
 border-radius: 8px;
@@ -252,6 +278,7 @@ justify-content: space-between;
 .quote .parkContent h2 {
 font-size: 24px;
 padding-bottom: 15px;
+text-align: left;
 }
 .quote .parkContent h2 img {
 width: 20px;
@@ -268,6 +295,7 @@ color: #73777B;
 overflow: hidden;
 border-radius: 50%;
 width: 22%;
+margin-right: 5px;
 }
 .quote .parkImg img {
 width: 100%;
@@ -286,4 +314,120 @@ height: 100%;
     border: none;
     background-color: blanchedalmond;
     box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+}
+
+
+/*weather*/
+
+.weather {
+    border:1px solid blanchedalmond;
+    margin-bottom: -100px;
+    padding-top: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 15px;
+    border-radius: 8px;
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+}
+.weather .weatherContent h2 {
+    font-size: 24px;
+    padding-bottom: 15px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+.weather .weatherContent span {
+    line-height: 30px;
+    color: #2C3639;
+    text-align: center;
+}
+.weather .weatherImg {
+    width: 25%;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    margin-top: 1rem;
+}
+.weather .weatherImg img {
+    width: 85%;
+    height: 85%;
+    margin-top: -25px;
+}
+
+/*안녕하세요, ~님*/
+.intro {
+    /* border:1px solid blanchedalmond; */
+    margin-top: 7%;
+}
+
+
+/*mood css*/
+/*css*/
+.mood {
+    /* border:1px solid blanchedalmond; */
+    margin-top: 0px;
+}
+
+.mood.showing {
+    visibility: visible;
+    background-color: #2d384db2;
+    position: relative;
+    margin: 20px;
+    width: 450px;
+    max-width: 95vw;
+    height: 670px;
+    opacity: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    vertical-align: middle;
+    border: 1px solid #bdccee;
+    border-radius: 50px;
+    box-shadow: inset 0 0 4px 4px #bdccee;
+    transition: width 1s 0.5s, border 1s 0.5s, opacity 1s 1s;
+}
+
+.mood .btns {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.mood button {
+    padding: 0;
+    margin: 3px;
+    display: flex;
+    flex-flow: column;
+    cursor: pointer;
+    border: 1px solid transparent;
+    margin-top: -40px;
+    margin-bottom: 10px;
+}
+
+.mood button:hover {
+    border: 1px solid #ffffff;
+}
+
+.mood button img {
+    width: 15vw;
+    height: 10vh;
+    max-width: 60px;
+    max-height: 65px;
+}
+
+.mood .text {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 10px;
+    line-height: 26px;
+    padding: 70px 0 70px 0;
+    margin-top: -30px;
+}
+
+.mood .text.showing {
+    height: 150px;
+    transition: height 0.5s;
 }

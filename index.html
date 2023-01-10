@@ -20,9 +20,11 @@
 
 <body>
     <section class="container2 leftSec">
-        <h2>기능추가</h2>
+    <div class="intro">
+        <h3>안녕하세요,ㅤㅤㅤ님</h3>
+    </div>
     <div class = "whenContainer">
-    오늘은
+        오늘은
         <div class = "today" id = "today"></div>
     </div>
 
@@ -32,8 +34,35 @@
             <span class="parkQuote">늦었다고 생각할 때가 늦었다</span>
         </div>
         <div class="parkImg">
-            <img src="https://landhyun.github.io/momentum/img/%EB%AA%85%EC%88%981.jpg" />
+            <img src="https://soundcat.com/wp/wp-content/uploads/2020/05/I4tD8JOL0a1uyWIvWiP3A5NEQpf0.jpg" />
         </div>
+    </div>
+
+    <!-- 날씨 -->
+    <div class="weather">
+        <div class="weatherContent">
+            <h2>날씨</h2>
+            <span class="city"></span>
+            <br />
+            <span class="temp"></span>
+        </div>
+        <div class="weatherImg">
+            <img src="https://landhyun.github.io/momentum/img/weather-news.png" />
+        </div>
+    </div>
+
+    <!-- 기분 -->
+    
+    <div class="mood">
+        <p>지금 기분이 어떠신가요?</p>
+        <div class="btns" onclick="moodClickEvent(event)">
+        <button id="fear"><img src="https://seongheejeon.github.io/To-Do-List-Contest/images/fear.png" alt="" /></button>
+        <button id="sadness"><img src="https://seongheejeon.github.io/To-Do-List-Contest/images/sadness.png" alt="" /></button>
+        <button id="joy"><img src="https://seongheejeon.github.io/To-Do-List-Contest/images/joy.png" alt="" /></button>
+        <button id="disgust"><img src="https://seongheejeon.github.io/To-Do-List-Contest/images/disgust.png" alt="" /></button>
+        <button id="anger"><img src="https://seongheejeon.github.io/To-Do-List-Contest/images/anger.png" alt="" /></button>
+        </div>
+        <div class="text"></div>
     </div>
 
     </section>
@@ -46,7 +75,7 @@
         <h1>To Do List</h1>
             <!--시계 만들기-->
             <div class = "clock">
-                아무것도 안했는데 벌써
+                아무것도 안 했는데 벌써
                 <div class="today" id="today"> </div>
                 <div class="time" id="time"></div>
                 
@@ -54,7 +83,7 @@
 
         <div class="input-area">
             <input type="text" class="task-input" />
-            <label for="task-label"><span>오늘의 할일은?</span></label>
+            <label for="task-label"><span>ㅤㅤㅤㅤㅤ오늘의 할일은?</span></label>
             <button class="button-add" type="button">+</button>
         </div>
 
@@ -77,7 +106,7 @@
         </section>
 
         <div class="clear-area">
-        <button class="allDelete" type="button">clear</button>
+        <button class="allDelete" type="button" onclick="alert('ToDoList가 전부 다 지워집니다.')">clear</button>
         </div>
     </section>
 
@@ -90,6 +119,8 @@
     <script src="./timer.js"></script>
     <script src="./quote.js"></script>
     <script src="./allDelete.js"></script>
+    <script src="./weather.js"></script>
+    <script src="./mood.js"></script>
     <!-- <script src="./heartButton.js"></script> -->
 </body>
 

@@ -42,10 +42,13 @@ function render() {
   } else {
     list = filteredList;
   }
+  
 
   for (let i = 0; i < list.length; i++) {
+    
     if (list[i].isComplete) {
-      result += `<div class="task task-done" id="${list[i].id}">
+      result += `
+      <div class="task task-done" id="${list[i].id}">
             <span>${list[i].content}</span>
             <div class="button-box">
             <button onclick="toggleDone('${list[i].id}')"><i class="fas fa-undo-alt"></i></button>
@@ -56,7 +59,7 @@ function render() {
       result += `<div class="task" id="${list[i].id}" >
             <span>${list[i].content}</span>
             <div class="button-box">
-            <button onclick="allDelete('${list[i].id}')"></button>
+            
             <button onclick="toggleDone('${list[i].id}')"><i class="fa fa-check"></i></button>
             <button onclick="deleteTask('${list[i].id}')"><i class="fa fa-trash"></i></button>
             </div>
@@ -97,17 +100,24 @@ function deleteTask(id) {
 }
 
 function allDelete(id) {
-
   for (let i = 0; i < taskList.length; i++) {
-    if (taskList[i].id === id) {
+    //if (taskList[i].id === id) {
       taskList.splice(0, taskList.length);
       //taskList.length = 0;
       //let ul = document.querySelector('ul').innerHTML ='';
       console.log("클리어")
-    }
+    //}
   }
   filter()
+}
 
+function handleHeartBtn(id) {
+  const checkHeart = id.currentTarget;
+  if(checkHeart.innerText === "🤍"){
+      checkHeart.innerText = "❤️";
+  } else {
+      checkHeart.innerText = "🤍";
+  }
 }
 
 function filter(e) {
