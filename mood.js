@@ -64,7 +64,6 @@ moodList.disgust = [
     "아프면<br>청춘이 아니라<br>환자다",
     "떡볶이<br>치킨<br>곱창<br>아이스크림<br>햄버거<br>초밥<br><br>\
     끌리는게 있다면 어서 시키세요<br>",
-    "<img style='width: 200px; height: 300px;' src='images/cat.jpg'>",
     "당신이 누군지 알면<br>맛있는걸 사줄텐데<br>모르니 어쩔 수 없군요",
     "밥은 거르지 않고 챙겨 먹었나요?<br>\
     저는 배가 고프면 예민해지더라구요..",

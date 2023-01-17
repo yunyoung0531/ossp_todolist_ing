@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="./css/loginIndex.css" rel="stylesheet" type="text/css"/> -->
+    <link rel="stylesheet" href="loginIndex.css">
+    <title>TO DO LIST</title>
+</head>
+<body>
+    <div class="infodiv">
+        <div class="insideForm">
+            <h1>후회되지 않을 2023년을 위한<br>
+            TO-DO LIST</h1>
+            <form id="loginForm" class="hidden" action="index.html">
+                <input type="text" class="nameInput" maxlength="15" placeholder="이름을 입력해주세요." required/>
+                <input type="submit" class="submitInput" onclick="pageTurn()" value="START ! "><span class="text"></span></input>
+            </form>
+            <h1 id="greeting" class="hidden"></h1>
+
+                <!-- 기분 -->
+                <div class="mood">
+                    <p>지금 기분이 어떠신가요?</p>
+                    <div class="btns" onclick="moodClickEvent(event)">
+                    <button id="fear"><img src="https://seongheejeon.github.io/To-Do-List-Contest/images/fear.png" alt="" /></button>
+                    <button id="sadness"><img src="https://seongheejeon.github.io/To-Do-List-Contest/images/sadness.png" alt="" /></button>
+                    <button id="joy"><img src="https://seongheejeon.github.io/To-Do-List-Contest/images/joy.png" alt="" /></button>
+                    <button id="disgust"><img src="https://seongheejeon.github.io/To-Do-List-Contest/images/disgust.png" alt="" /></button>
+                    <button id="anger"><img src="https://seongheejeon.github.io/To-Do-List-Contest/images/anger.png" alt="" /></button>
+                    </div>
+                    <div class="text"></div>
+                </div>
+        </div>
+
+    </div>
+    <div class="imgdiv">
+        <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDA0MjNfMTEy%2FMDAxNTg3NjMyOTcxODE4.Ww0nxp99fdSnzNFOIWv86oP-fbutFqeC6HOnJ1qvgpkg.MQcVJanOjckg1XoQWMGhiNEDwPQ2Z6qcrdWPrdvdXFIg.JPEG.beeteelli%2F1587632968623.jpg&type=sc960_832" />
+    </div>
+    
+</body>
+    <!-- <script src="./js/bgImg.js"></script> -->
+    <!-- <script src="./js/greeting.js"></script> -->
+
+    <script src="greeting.js"></script>
+    <script src="mood.js"></script>
+    <!-- <script src="bgImg.js"></script> -->
+</html>

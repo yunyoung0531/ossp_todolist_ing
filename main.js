@@ -7,6 +7,7 @@ let selectedMenu = "tab-all";
 let filteredList = [];
 let allDeleteBtn = document.querySelector(".allDelete");
 //document.getElementById("allDelete").addEventListener("click", allDelete)
+//const todoList = document.querySelector("#todoList");
 
 addButton.addEventListener("mousedown", addTask);
 allDeleteBtn.addEventListener("click", allDelete);
@@ -42,34 +43,37 @@ function render() {
   } else {
     list = filteredList;
   }
-  
 
   for (let i = 0; i < list.length; i++) {
     
     if (list[i].isComplete) {
       result += `
-      <div class="task task-done" id="${list[i].id}">
+            <div class="task task-done" id="${list[i].id}">
+
+            <div class="container_">
+            <i class="far fa-heart js-heart heart"></i>
+            </div>
+
             <span>${list[i].content}</span>
             <div class="button-box">
-            <button onclick="toggleDone('${list[i].id}')"><i class="fas fa-undo-alt"></i></button>
+            <button onclick="toggleDone('${list[i].id}')"><i class="fa fa-undo-alt"></i></button>
             <button onclick="deleteTask('${list[i].id}')"><i class="fa fa-trash"></i></button>
             </div>
         </div>`;
     } else if(!list[i].isComplete) {
-      result += `<div class="task" id="${list[i].id}" >
+      result += `
+            <div class="task" id="${list[i].id}">
+
+            <div class="button-box">
+            <div class="container_">
+            <i class="far fa-heart js-heart heart"></i>
+            </div>
+            </div>
+
             <span>${list[i].content}</span>
             <div class="button-box">
-            
             <button onclick="toggleDone('${list[i].id}')"><i class="fa fa-check"></i></button>
             <button onclick="deleteTask('${list[i].id}')"><i class="fa fa-trash"></i></button>
-            </div>
-        </div>`;
-    }
-    else {
-      result += `<div class="allDelete" id="${list[i].id}" >
-            <span>${list[i].content}</span>
-            <div class="allDelete">
-            <button onclick="allDelete('${list[i].id}')">클리어</button>
             </div>
         </div>`;
     }
@@ -77,6 +81,37 @@ function render() {
 
   document.getElementById("task-board").innerHTML = result;
   allDeleteBtn.addEventListener("click", allDelete);
+
+  //------------------
+// gets a reference to the heartDOm
+const heartDOM = document.querySelector('.js-heart');
+// initialized like to false when user hasnt selected
+let liked = false;
+// create a onclick listener
+heartDOM.onclick = (event) => {
+	// check if liked 
+	liked = !liked; // toggle the like ( flipping the variable)
+	
+	// this is what we clicked on
+	const target = event.currentTarget;
+	
+  //for (let i = 0; i < taskList.length; i++) {
+    if (liked) {
+      // remove empty heart if liked and add the full heart
+      target.classList.remove('far');
+      target.classList.add('fas', 'pulse');
+    } else {
+      // remove full heart if unliked and add empty heart
+      target.classList.remove('fas');
+      target.classList.add('far');
+    }
+  //}
+  
+}
+heartDOM.addEventListener('animationend', (event) => {
+event.currentTarget.classList.remove('pulse');
+})
+//------------------------------------
 }
 
 function toggleDone(id) {
@@ -99,25 +134,12 @@ function deleteTask(id) {
   filter();
 }
 
-function allDelete(id) {
+function allDelete() {
   for (let i = 0; i < taskList.length; i++) {
-    //if (taskList[i].id === id) {
-      taskList.splice(0, taskList.length);
-      //taskList.length = 0;
-      //let ul = document.querySelector('ul').innerHTML ='';
-      console.log("클리어")
-    //}
+    taskList.splice(0, taskList.length);
+    console.log("클리어")
   }
   filter()
-}
-
-function handleHeartBtn(id) {
-  const checkHeart = id.currentTarget;
-  if(checkHeart.innerText === "🤍"){
-      checkHeart.innerText = "❤️";
-  } else {
-      checkHeart.innerText = "🤍";
-  }
 }
 
 function filter(e) {
