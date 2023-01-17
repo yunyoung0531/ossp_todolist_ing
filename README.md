@@ -2,9 +2,9 @@
 중간 (미완성)
 
 
-. 제목: ToDoList
-. 주제: <오픈소스를 이용하여 나만의 ToDoList 만들기>
-. 기존(참고) 소스 주소: https://github.com/legobitna/noona-todo-list.git
+. 제목: ToDoList  
+. 주제: <오픈소스를 이용하여 나만의 ToDoList 만들기>  
+. 기존(참고) 소스 주소: https://github.com/legobitna/noona-todo-list.git  
 . 기존 소스의 라이센스: 미표기
 . 기존 소스의 기능 프로그램 흐름도(System Flow-chart), 목록(Function List), 클래스 목록(Class List), 화면 구성: 상세 설명은 보고서에 작성
 . 내 소스 깃허브 주소: https://github.com/yunyoung0531/ossp_todolist_ing
