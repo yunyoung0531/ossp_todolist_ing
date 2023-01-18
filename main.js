@@ -6,6 +6,7 @@ let taskList = [];
 let selectedMenu = "tab-all";
 let filteredList = [];
 let allDeleteBtn = document.querySelector(".allDelete");
+let classList = [];
 //document.getElementById("allDelete").addEventListener("click", allDelete)
 //const todoList = document.querySelector("#todoList");
 
@@ -64,10 +65,8 @@ function render() {
       result += `
             <div class="task" id="${list[i].id}">
 
-            <div class="button-box">
             <div class="container_">
             <i class="far fa-heart js-heart heart"></i>
-            </div>
             </div>
 
             <span>${list[i].content}</span>
@@ -88,14 +87,13 @@ const heartDOM = document.querySelector('.js-heart');
 // initialized like to false when user hasnt selected
 let liked = false;
 // create a onclick listener
-heartDOM.onclick = (event) => {
+heartDOM.onclick = (event, id) => {
 	// check if liked 
 	liked = !liked; // toggle the like ( flipping the variable)
 	
 	// this is what we clicked on
 	const target = event.currentTarget;
 	
-  //for (let i = 0; i < taskList.length; i++) {
     if (liked) {
       // remove empty heart if liked and add the full heart
       target.classList.remove('far');
@@ -105,14 +103,17 @@ heartDOM.onclick = (event) => {
       target.classList.remove('fas');
       target.classList.add('far');
     }
-  //}
   
 }
 heartDOM.addEventListener('animationend', (event) => {
-event.currentTarget.classList.remove('pulse');
+event.currentTarget.taskList.remove('pulse');
 })
 //------------------------------------
+
+
 }
+
+
 
 function toggleDone(id) {
   for (let i = 0; i < taskList.length; i++) {
@@ -135,10 +136,10 @@ function deleteTask(id) {
 }
 
 function allDelete() {
-  for (let i = 0; i < taskList.length; i++) {
+  //for (let i = 0; i < taskList.length; i++) {
     taskList.splice(0, taskList.length);
     console.log("클리어")
-  }
+  //}
   filter()
 }
 
