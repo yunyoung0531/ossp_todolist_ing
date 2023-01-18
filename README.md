@@ -14,6 +14,11 @@
 . 프로젝트의 특징: 주장하고자 하는 특징이 있는 경우  
 . 느낀점  
 
+<img src="https://user-images.githubusercontent.com/68066598/213127747-69dd9178-a602-4b7a-9c86-c851e55ba2cd.png" width="60%" height="60%">  
+기존 오픈소스 ToDoList 화면
 
-<img src="https://user-images.githubusercontent.com/68066598/213126664-2a4d346e-7e0f-4575-b5d0-cafccae93754.png" width="80%" height="80%">  
+<img src="https://user-images.githubusercontent.com/68066598/213126664-2a4d346e-7e0f-4575-b5d0-cafccae93754.png" width="60%" height="60%">  
 로그인화면
+
+<img src="https://user-images.githubusercontent.com/68066598/213130002-5dccc821-427b-4898-b0a7-084303f5b74f.png" width="60%" height="60%">  
+메인 ToDoList 화면
