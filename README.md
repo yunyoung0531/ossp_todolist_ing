@@ -36,6 +36,8 @@ ___오픈소스SW프로젝트 조선대학교 컴퓨터공학과 20203215 최윤
 <img src="https://user-images.githubusercontent.com/68066598/213183485-58d23c2a-72d5-4adf-a5d2-e25bc1048a77.png" width="60%" height="60%">  
 
   
+* 시연 영상
+https://user-images.githubusercontent.com/68066598/213183801-2d1648ee-9ad8-4ad7-a847-02f9035e34fb.mp4
 
 
 * 느낀점  
