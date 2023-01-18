@@ -30,7 +30,10 @@ ___오픈소스SW프로젝트 조선대학교 컴퓨터공학과 20203215 최윤
     
 
 * 기존 소스의 기능
-![image](https://user-images.githubusercontent.com/68066598/213183153-a6c1441c-e3d4-44b5-910d-b4ea4634ed54.png)
+<img src="https://user-images.githubusercontent.com/68066598/213183153-a6c1441c-e3d4-44b5-910d-b4ea4634ed54.png" width="60%" height="60%">  
+
+* 기존 소스 수정, 개선 후 추가된 기능들
+<img src="https://user-images.githubusercontent.com/68066598/213183485-58d23c2a-72d5-4adf-a5d2-e25bc1048a77.png" width="60%" height="60%">  
 
   
 
