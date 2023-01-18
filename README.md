@@ -5,13 +5,13 @@
 . 주제: <오픈소스를 이용하여 나만의 ToDoList 만들기>  
 . 기존(참고) 소스 주소: https://github.com/legobitna/noona-todo-list.git  
 . 기존 소스의 라이센스: 미표기  
-. 기존 소스의 기능 프로그램 흐름도(System Flow-chart), 목록(Function List), 클래스 목록(Class List), 화면 구성: 상세 설명은 보고서에 작성  
+. 기존 소스의 기능 프로그램 흐름도(System Flow-chart), 목록(Function List), 클래스 목록(Class List), 화면 구성: 보고서에 작성  
 . 내 소스 깃허브 주소: https://github.com/yunyoung0531/ossp_todolist_ing  
-. 내  소스 라이센스  
-. 기존 소스와 차별점: 목록 및 출력물 비교  
-. 깃 허브 로그 정보  
-. 프로젝트의 특징: 주장하고자 하는 특징이 있는 경우  
-. 느낀점  
+. 내  소스 라이센스: 미표기  
+. 기존 소스와 차별점(목록 및 출력물 비교): 아래 참고   
+. 깃 허브 로그 정보: 아래 참고  
+. 프로젝트의 특징: 주장하고자 하는 특징이 있는 경우 x  
+. 느낀점: 아래 참고  
   
   
 기존 오픈소스 ToDoList 화면
