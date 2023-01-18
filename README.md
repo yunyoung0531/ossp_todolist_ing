@@ -15,5 +15,5 @@
 . 느낀점  
 
 
-<img src="https://user-images.githubusercontent.com/68066598/213126664-2a4d346e-7e0f-4575-b5d0-cafccae93754.png  width="100%" height="100%"/>  
+<img src="https://user-images.githubusercontent.com/68066598/213126664-2a4d346e-7e0f-4575-b5d0-cafccae93754.png width="300" height="300">
 로그인화면
