@@ -17,17 +17,17 @@ ___오픈소스SW프로젝트 조선대학교 컴퓨터공학과 20203215 최윤
 . 느낀점: 아래 참고  
   
   
-*기존 오픈소스 ToDoList 화면
+
 <img src="https://user-images.githubusercontent.com/68066598/213127747-69dd9178-a602-4b7a-9c86-c851e55ba2cd.png" width="60%" height="60%">  
+* 기존 오픈소스 ToDoList 화면  
   
-  
-*로그인화면
+
 <img src="https://user-images.githubusercontent.com/68066598/213126664-2a4d346e-7e0f-4575-b5d0-cafccae93754.png" width="60%" height="60%">  
-    
+* 로그인화면    
   
-*메인 ToDoList 화면
+
 <img src="https://user-images.githubusercontent.com/68066598/213130002-5dccc821-427b-4898-b0a7-084303f5b74f.png" width="60%" height="60%">  
-    
+* 메인 ToDoList 화면    
 
   
 <느낀점>  
