@@ -15,10 +15,16 @@
 . 느낀점  
 
 <img src="https://user-images.githubusercontent.com/68066598/213127747-69dd9178-a602-4b7a-9c86-c851e55ba2cd.png" width="60%" height="60%">  
-기존 오픈소스 ToDoList 화면
-
+기존 오픈소스 ToDoList 화면  
+  
+  
 <img src="https://user-images.githubusercontent.com/68066598/213126664-2a4d346e-7e0f-4575-b5d0-cafccae93754.png" width="60%" height="60%">  
-로그인화면
-
+로그인화면  
+  
+  
 <img src="https://user-images.githubusercontent.com/68066598/213130002-5dccc821-427b-4898-b0a7-084303f5b74f.png" width="60%" height="60%">  
-메인 ToDoList 화면
+메인 ToDoList 화면  
+
+  
+<느낀점>
+프로젝트는 많이 해봤는데 오픈소스를 활용한 프로젝트는 처음이라 감을 잡기가 힘들었다. 오픈소스는 말로만 들어봤지. 실제로 프로젝트에 사용해본적이 처음이어서 많이 미숙했다.
