@@ -39,6 +39,9 @@ ___오픈소스SW프로젝트 조선대학교 컴퓨터공학과 20203215 최윤
 * 시연 영상
 https://user-images.githubusercontent.com/68066598/213183801-2d1648ee-9ad8-4ad7-a847-02f9035e34fb.mp4
 
+![ezgif com-video-to-gif (4)](https://user-images.githubusercontent.com/68066598/221342185-165e18fa-e97f-4164-a8ab-582756062f40.gif)
+
+
 
 * 느낀점  
 프로젝트는 꽤 해봤는데 오픈소스를 활용한 프로젝트는 처음이라 감을 잡기가 힘들었다. 오픈소스는 말로만 들어봤지. 실제로 프로젝트에 사용해본적이 처음이어서 많이 미숙했다.  
